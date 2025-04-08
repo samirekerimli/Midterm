@@ -86,3 +86,28 @@ void main(){
 
 
 Problem 4.4:
+abstract class Vehicle {
+  void start();
+}
+
+class Car implements Vehicle {
+  @override
+  void start() {
+    print("Car is start...");
+  }
+}
+
+class Bike implements Vehicle {
+  @override
+  void start() {
+    print("Bike is start...");
+  }
+}
+
+
+void main(){
+ Vehicle car = Car();
+  Vehicle bike = Bike();
+  car.start();
+  bike.start();
+}
